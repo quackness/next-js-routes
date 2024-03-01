@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 const DATA = "https://jsonplaceholder.typicode.com/todos";
 const API_KEY: string = process.env.DATA_API_KEY as string;
-console.log(API_KEY)
+console.log(">>>", API_KEY)
 
 export async function GET(request: Request) {
   const id = request.url.slice(request.url.lastIndexOf("/") + 1);
